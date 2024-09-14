@@ -1,34 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-App</title>
-</head>
-<body>
-<header>
-    <form>
-        <input type="Search" placeholder="Enter A City..." required/>
-        <input type="Submit" value="Search" />
-    </form>
-</header>
-<main>
-  <div class="weather-app">
-    <div>
-        <h1 class="weather-city" id="City">Johannesburg</h1>
-        <p class="weather-details">
-            <span id="time">Thursday 14:49, clear Sky</span>
-            <br />
-            Humidity:<strong>74%</strong>, Wind:<strong>3.09km/h</strong>
-        </p>
-    </div>
-    <div class="weather-temperature-container">
-        <div id="weather-icon">
-            <img src="https://icons.veryicon.com/png/o/miscellaneous/test-6/weather-91.png" width="50">
-            
-        </div>
-    </div>
-  </div>
-</main>
-</body>
+<html>
+    <head>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Weather-app</title>
+        </head>
+        <body>
+            <div class="weather-app">
+                <hearder>
+                    <form class="search-form" id="search-form">
+                        <input type="search" placeholder="Enter A City..." required id="search-form" class="search-form-input">
+                        <input type="submit" value="Search" class="search-form-button">
+                    </form>
+                </hearder>
+                <main>
+                    <div class="weather-app-data">
+                        <div>
+                            <h1 class="weather-app-city" id="city">Johannesburg</h1>
+                            <p class="weather-app-details">
+                                <span id="time">Monday 10:15</span>,
+                                <span id="description">Clear Sky</span>
+                                <br />
+                                Humidity:
+                                <strong id="humidity">66%</strong>
+                                Wind:
+                                <strong id="wind">3.13km/h</strong>
+                            </p>
+                        </div>
+                        <div class="weather-app-container">
+                            <div id="icon">
+                                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="150" class="weather-app-icon">
+                            </div>
+                            <div class="weather-app-temperature" id="tempeature">34</div>
+                            <div class="weather-app-unit">&deg;C</div>
+                        </div>
+                    </div>
+                </main>
+
+                <div class="weather-forecast" id="forecast">
+                    <div class="weather-forecst-day">
+                        <div class="weather-app-date">Tues</div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="50" class="weather-app-icon">
+                        <div class="weather-forecast-temperature">
+                            <strong>29&deg;</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">19&deg;</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast" id="forecast">
+                    <div class="weather-forecst-day">
+                        <div class="weather-app-date">Wed</div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="50" class="weather-app-icon">
+                        <div class="weather-forecast-temperature">
+                            <strong>21&deg;</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">13&deg;</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast" id="forecast">
+                    <div class="weather-forecst-day">
+                        <div class="weather-app-date">Thur</div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="50"
+                            class="weather-app-icon">
+                        <div class="weather-forecast-temperature">
+                            <strong>21&deg;</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">13&deg;</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast" id="forecast">
+                    <div class="weather-forecst-day">
+                        <div class="weather-app-date">Fri</div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" width="50"
+                            class="weather-app-icon">
+                        <div class="weather-forecast-temperature">
+                            <strong>21&deg;</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">13&deg;</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast" id="forecast">
+                    <div class="weather-forecst-day">
+                        <div class="weather-app-date">Sat</div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="50"
+                            class="weather-app-icon">
+                        <div class="weather-forecast-temperature">
+                            <strong>21&deg;</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">13&deg;</div>
+                    </div>
+                </div>
+                <footer>
+                    This project is coded by 
+                    <a href="https://github.com/MemeMolefe" target="_blank">Meme Molefi</a> 
+                    ,is 
+                    <a href="https://github.com/MemeMolefe/Weather-App-Project" target="_blank">Open source on Github</a> 
+                    and
+                    <a href="https://app.netlify.com/teams/mememolefe/sites" target="_blank">hosted n Netlify</a>             
+                 </footer>
+            </div>
+        </body>
+        </html>
+    </head>
 </html>
