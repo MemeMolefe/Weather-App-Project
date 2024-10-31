@@ -9,9 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
         rel="stylesheet">
-    <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  
 </head>
 
 <body>
@@ -26,16 +27,16 @@
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city" id="City">Johannesburg</h1>
+                    <h1 class="weather-app-city" id="City"></h1>
 
                     <p class="weather-app-details">
-                        <span id="time">Monday 20:16</span>,
-                        <span id="description">Clear Sky</span>
+                        <span id="time"></span>,
+                        <span id="description"></span>
                         <br />
                         Humidity:
-                        <strong id="Humidity">20%</strong>,
+                        <strong id="Humidity"></strong>,
                         Wind:
-                        <strong id="wind-speed">7.7km/h</strong>
+                        <strong id="wind-speed"></strong>
                     </p>
                 </div>
 
@@ -133,8 +134,6 @@
             </a>
         </footer>
     </div>
-
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
-
 </html>
